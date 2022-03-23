@@ -1,0 +1,76 @@
+https://code.visualstudio.com/ > install
+https://nodejs.org/en/ > install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+https://git-scm.com/downloads > Install
+
+//extension
+> chrome (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+
+> vscode
+githistory
+gitlens
+TabNine
+eslint
+vscode-icons
+spellCheck
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Redis  > 6379
+redisWithMongo
+ImageUpload
+Node-Es6(.babel)
+MongoDb Basic >27017  (local/cloud)
+Api with NodeJS(Rest)>1
+Swagger
+Testing
+DashBoard(Crud)
+Github
+
+Login/Logout(JWT)
+Oauth(with github)
+--Deployment of app---
+Heroku
+Pm2
+Docker
+Nginx
+Oauth(with google)
+GraphQl API
+NodeJs with postgres
+Paytm-Payment
+Email With Node(sendgird)(https://app.sendgrid.com/)
+Chatapp
+TelegramChat
+FIREBASE
+--------NOT---------
+React/Angular
+Html/css/jquery
+ 
+Node
+> Single Thread Async Non blocking I/O
+
+code
+|
+machine
+
+compiler(C++ + V8 Chrome Engine)
+
+////////////
+Open Source
+//////////
+Any body can contribute to development
+
+packages
+
+
+
+////////
+NPM
+json
+packages.json
+how to install packages
+Set application folder
