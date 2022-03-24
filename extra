@@ -73,4 +73,41 @@ NPM
 json
 packages.json
 how to install packages
+
 Set application folder
+node inbuilt packages
+
+////////
+Json > way to represent data
+[
+    {
+        "name":"John",
+        "city":"Delhi"
+    },
+    {
+        "name":"Amit",
+        "city":"Amsterdam",
+        "country":"Netherlands"
+    }
+]
+
+////
+package.json
+> Entry point to the application
+>meta data (description,version,name,author)
+>script (start,test)
+>packages (what package we are using)
+
+///////How to generate package.json////////
+*NodeJs must be install in your system
+> open the cmd/terminal
+> go inside the folder where you want to generate
+> npm init
+> answer all questions
+> type "yes"
+
+/////////Step to Install packages/////////
+*NodeJs must be install in your system
+> open the cmd/terminal
+> go inside the folder where you want to generate
+> npm i packagename
