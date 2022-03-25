@@ -25,6 +25,7 @@ redisWithMongo
 ImageUpload
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
+Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
 Testing
@@ -65,17 +66,6 @@ Open Source
 Any body can contribute to development
 
 packages
-
-
-
-////////
-NPM
-json
-packages.json
-how to install packages
-
-Set application folder
-node inbuilt packages
 
 ////////
 Json > way to represent data
@@ -133,3 +123,9 @@ Course Content Link: https://bit.ly/3iFZsxH
 
 Naresh IT wishes you a Good Day!
 */
+
+////step to generate node app
+
+npx @aakashdeveloper/create-node-app generate
+y
+provide appname
