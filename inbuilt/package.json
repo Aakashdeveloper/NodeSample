@@ -1,0 +1,15 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "this is static apo",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node http.js",
+    "dev":"nodemon http.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "nareshit",
+  "license": "ISC"
+}

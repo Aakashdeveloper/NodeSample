@@ -31,7 +31,6 @@ Swagger
 Testing
 DashBoard(Crud)
 Github
-
 Login/Logout(JWT)
 Oauth(with github)
 --Deployment of app---
@@ -39,6 +38,7 @@ Heroku
 Pm2
 Docker
 Nginx
+
 Oauth(with google)
 GraphQl API
 NodeJs with postgres
@@ -129,3 +129,12 @@ Naresh IT wishes you a Good Day!
 npx @aakashdeveloper/create-node-app generate
 y
 provide appname
+
+/////////Install Global Package////////
+#window
+> open the cmd as adminstrator
+> npm i -g nodemon
+
+#mac/linux
+> open the terminal
+> sudo npm i -g nodemon
