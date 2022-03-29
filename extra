@@ -102,27 +102,6 @@ package.json
 > go inside the folder where you want to generate
 > npm i packagename / npm install packagename
 
-/*
-Dear Student,
-
-Greetings from Naresh IT! 
-
-Please find the below video link and password.
- 
-Demo: 01 ( 22-03-2022)
-Video Link: shorturl.at/fnINZ
-Password:  MzP74*+X
- 
-Demo: 02 ( 23-03-2022)
-Video Link: shorturl.at/hsGQ0
-Password:  eVs*@J73
-
-Duration: 40 Days( Daily 1 Hour)
-Actual Fee: Rs.10,000/-, Offer Fee: Rs.8,000/-.  
-Course Content Link: https://bit.ly/3iFZsxH
-
-Naresh IT wishes you a Good Day!
-*/
 
 ////step to generate node app
 
@@ -139,23 +118,60 @@ provide appname
 > open the terminal
 > sudo npm i -g nodemon
 
+/////////////
+Ecma Script
+//es5
 
-Name: Naresh i Technologies
+//es6
 
-A/C No. 50200022639833     
+var a = 10
+var b= "my age is "+a
+"my age is 10"
 
-Bank: HDFC
+let a = 10
+let b = `my age is ${a}`
 
-A/C Type: Current Account
 
-IFSC Code: HDFC0001627
+////
+var > we can redeclare and reassign
+let > we cannot redeclare and but can reassign
+const > we cannot redeclare and nor reassign
 
-MICR Code: 500240035
-Branch Code: 001627
+var a = 10
+var a /// declare the variable
+a = 10 /// assignment of variable
 
-Branch:  Ameerpet
-Me to Everyone (7:52 PM)
-Hi students,
-Today is the last demo class from tomorrow link will going to be change.Pay the fee amount and get the new link.After payment send the payment screenshot to this number 7337313421.
-And any queries contact Mr.Prasad. 9951108540
-contact number:7337313421
+
+> var a = 10
+undefined
+> a
+10
+> var a = 11
+undefined
+> a
+11
+> a = 12
+12
+> a
+12
+> 
+
+> let b = 10
+undefined
+> b
+10
+> 
+> let b = 11
+Uncaught SyntaxError: Identifier 'b' has already been declared
+> b = 11
+11
+> 
+
+> const c = 10
+undefined
+> c
+10
+> const c = 11
+Uncaught SyntaxError: Identifier 'c' has already been declared
+> c = 11
+Uncaught TypeError: Assignment to constant variable.
