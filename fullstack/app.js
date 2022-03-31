@@ -21,7 +21,7 @@ app.set('view engine','ejs')
 ///default route
 app.get('/', function(req,res){
     //res.send("<h1>Welcome To Express</h1>")
-    res.render('first',{title:'First Ejs Code'})
+    res.render('index',{title:'Home Page'})
 });
 
 app.use('/category', categoryRouter)

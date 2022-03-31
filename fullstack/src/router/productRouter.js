@@ -517,7 +517,8 @@ var products = [
 
 productRouter.route('/')
     .get(function(req,res){
-        res.send(products)
+       // res.send(products)
+       res.render('products',{title:'Products Page',products })
     })
 
 productRouter.route('/details')
@@ -526,3 +527,8 @@ productRouter.route('/details')
     })
 
 module.exports = productRouter
+
+///products:products
+///data:data   >>>>> data
+// var data = this.state.data
+// var {data} = this.state

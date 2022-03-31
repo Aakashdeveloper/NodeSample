@@ -1,0 +1,32 @@
+> https://www.mongodb.com/try/download/community  (download & install)
+
+#window
+> open the c  drive
+> make folder by the name of data
+> inside data make folder by the name of db
+> c:\data\db
+
+#mac/linux
+> open terminal
+> mkdir data/db
+
+////////
+#window
+> open one cmd
+> go inside c:\programFile\mongodb\server\5.0.6\bin
+> mongod (start mongodb server on port 27017)
+
+> open new cmd
+> go inside c:\programFile\mongodb\server\5.0.6\bin
+> mongo (start mongodb console)
+
+////////
+#mac/linux
+> open one terminal
+> mongod --dbpath data/db (start mongodb server on port 27017)
+
+> open new terminal
+> mongo (start mongodb console)
+
+
+> https://www.mongodb.com/cloud/atlas/register1  
