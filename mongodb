@@ -29,4 +29,69 @@
 > mongo (start mongodb console)
 
 
-> https://www.mongodb.com/cloud/atlas/register1  
+> https://www.mongodb.com/cloud/atlas/register1 
+
+///////////////
+RollNo |  Hindi  | English |
+  1    |  87     |         |
+  2    |         |   72    |
+  3    |  78     |         |
+
+[
+    {
+        rollNo:1,
+        Hindi:87
+    },
+    {
+        rollNo:2,
+        English:72
+    },
+    {
+        rollNo:3,
+        Hindi:78
+    }
+]
+
+
+///////////////////////
+Sql         mongodb
+Database    Database
+table       collections
+row         documents
+insert      insert
+select      find
+update      update
+delete      remove
+
+
+//////////
+To See all Database
+> show dbs
+
+/////
+Create New Database
+> use dbname
+
+// insert record
+> db.collectionName.insert()
+
+> db.user.insert({name:'Amit'})
+> db.user.insert({name:'Nikita'})
+> db.user.insert({_id:1, name:'Anchal'})
+> db.user.insert({_id:2, name:'Ayush'})
+> db.user.insert({_id:3, name:'John', city:'Amsterdam'})
+
+///// Go inside Database
+> use dbname
+
+/// to see collections
+> show collections
+
+///to find the records
+> db.user.find()
+
+_id > primary key, unique , no duplicate value;
+12 byte 
+(random number) 5 bytes
+(series) 3 bytes
+(timestamp) 4 bytes

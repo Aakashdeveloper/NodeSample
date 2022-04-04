@@ -175,3 +175,21 @@ undefined
 Uncaught SyntaxError: Identifier 'c' has already been declared
 > c = 11
 Uncaught TypeError: Assignment to constant variable.
+
+///products:products
+///data:data   >>>>> data
+// var data = this.state.data
+// var {data} = this.state
+
+/////
+# params
+> we pass after /
+> use for mainly one value
+> req.params.paramname
+> we need to declare it
+
+# query params
+> we pass after ?
+> use for passing multiple values
+> req.params.queryname
+> no need to declare it
