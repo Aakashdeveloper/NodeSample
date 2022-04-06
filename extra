@@ -19,6 +19,7 @@ spellCheck
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+////////////////////////
 Third Party Api (Weather Api)
 Redis  > 6379
 redisWithMongo
@@ -187,6 +188,7 @@ Uncaught TypeError: Assignment to constant variable.
 > use for mainly one value
 > req.params.paramname
 > we need to declare it
+> if declare than compulsory to pass
 
 # query params
 > we pass after ?

@@ -95,3 +95,7 @@ _id > primary key, unique , no duplicate value;
 (random number) 5 bytes
 (series) 3 bytes
 (timestamp) 4 bytes
+
+///find with condition
+> db.products.find({category_id:1})
+> db.products.find({category_id:1,product_name:'Iron'})

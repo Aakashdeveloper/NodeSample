@@ -87,9 +87,8 @@
         <div class="panel-body">
           
           
-          
+          <% for(i=0;i<products.length;i++){%>
           <!--/stories-->
-          <% for(i=0;i<products.length;i++){ %>
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
@@ -102,8 +101,8 @@
                   <h4><span class="label label-default">Rs. <%=products[i].Price%></span></h4>
                   <h4><span class="label label-default"><%=products[i].Color%></span></h4>
                   <h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><%=products[i].Brand?products[i].Brand:products[i].company%> 
-                    <a href="/products/details?id=<%=products[i]._id%>" class="text-muted">Read More</a></small>
+                  <small style="font-family:courier,'new courier';" class="text-muted"><%=products[i].Brand?products.Brand:products.company%> 
+                  </small>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>
