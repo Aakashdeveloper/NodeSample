@@ -17,6 +17,16 @@ app.get('/',(req,res) => {
     res.render('index')
 })
 
+app.post('/profile',(req,res) => {
+    console.log(req.files);
+    console.log(req.body)
+    const imageFile = req.files.yourImage;
+    imageFile.mv(`${__dirname}/public/images/${imageFile.name}`,(err,data) => {
+        if(err) throw err;
+        res.render('display',{title:req.body.uname, image:imageFile.name})
+    })
+})
+
 
 app.listen(port, (err) => {
     console.log(`Server is running on port ${port}`)

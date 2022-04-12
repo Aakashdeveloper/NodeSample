@@ -29,6 +29,23 @@
 > mongo (start mongodb console)
 
 
+/////////////Cloud Setup///////////////
+> https://www.mongodb.com/
+> create account with gmail
+
+> database access
+    > Add db user
+        > create atlas admin
+            
+> network access
+    > add ip (0.0.0.0/0)
+
+> Database
+    > Create
+        > Shared
+        > M0 sandbox 
+        >create cluster
+
 > https://www.mongodb.com/cloud/atlas/register1 
 
 ///////////////

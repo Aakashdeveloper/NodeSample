@@ -19,14 +19,15 @@ spellCheck
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
-NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+NodeJS(full Stack App) (Node-
+-Mongo-Express)
 Third Party Api (Weather Api)
 Redis  > 6379
 RedisWithMongo
-
-////////////////////////
 ImageUpload
 Node-Es6(.babel)
+////////////////////////
+
 
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
@@ -34,7 +35,6 @@ Api with NodeJS(Rest)>1
 Swagger
 Testing
 DashBoard(Crud)
-
 Github
 Login/Logout(JWT)
 Oauth(with github)
@@ -43,7 +43,6 @@ Heroku
 Pm2
 Docker
 Nginx
-
 Oauth(with google)
 GraphQl API
 NodeJs with postgres
@@ -221,3 +220,5 @@ get keyname
 del keyname
 FLUSH ALL
 set name 'John' EX 3600
+
+npm i @babel/core  @babel/preset-env @babel/register
