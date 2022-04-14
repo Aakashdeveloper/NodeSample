@@ -116,3 +116,70 @@ _id > primary key, unique , no duplicate value;
 ///find with condition
 > db.products.find({category_id:1})
 > db.products.find({category_id:1,product_name:'Iron'})
+
+///projection
+
+db.products.find({condition},{projection})
+
+db.products.find({},{product_name:1,Price:1,_id:0})
+
+db.products.find({category_id:2},{product_name:1,Price:1,_id:0})
+
+db.products.find({category_id:1}).limit(5).pretty()
+
+db.products.find({category_id:1}).skip(5).limit(5).pretty()
+
+db.products.find({category_id:1}).limit(5).sort({Price:-1}).pretty()
+
+
+db.restaurent.find({"type.mealtype":6}).pretty()
+
+
+db.restaurent.find({cost:{$gt:500}},{name:1,cost:1,_id:0})
+
+db.restaurent.find({cost:{$lt:500}},{name:1,cost:1,_id:0})
+
+db.restaurent.find({cost:{$gt:400,$lt:500}},{name:1,cost:1,_id:0})
+
+db.restaurent.find({"Cuisine.cuisine":{$in:['1','2','3']}},{name:1,Cuisine:1,_id:0})
+
+
+
+///update/////
+db.collections.update(
+    {condition},
+    {update}
+)
+
+db.user.update(
+    {_id:1},
+    {
+        $set:{
+            "phone":87676787687,
+            "city":"Delhi"
+        }
+    }
+)
+
+db.user.update(
+    {_id:1},
+    {
+        $set:{
+            "city":"Mumbai"
+        }
+    }
+)
+
+db.user.update(
+    {_id:1},
+    {
+        $unset:{
+            "phone":1
+        }
+    }
+)
+
+//////delete////
+db.user.remove({})  /// remove all records 
+
+db.user.remove({name:"John"})
