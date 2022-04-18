@@ -4,6 +4,7 @@ https://github.com/ > Create Account
 https://github.com/Aakashdeveloper > Follow
 https://github.com/developerTech > Follow
 https://git-scm.com/downloads > Install
+https://www.postman.com/
 
 //extension
 > chrome (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
@@ -220,3 +221,10 @@ FLUSH ALL
 set name 'John' EX 3600
 
 npm i @babel/core  @babel/preset-env @babel/register
+
+/////////
+CRUD
+Create > Post
+Read   > Get
+Update > Put
+Delete > Delete
