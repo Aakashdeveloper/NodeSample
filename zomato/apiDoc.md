@@ -1,8 +1,11 @@
 ////Home
 > List of City
+# http://localhost:9870/location
 > List of restaurants
+# http://localhost:9870/restaurants
 > Restaurants wrt city
 > List of MealType
+# http://localhost:9870/mealtype
 
 /////Listing
 > Restaurants wrt mealType
