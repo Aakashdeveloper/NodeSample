@@ -23,15 +23,47 @@
 
 ////Details
 > Restaurants details
-> (Post) menu wrt to restaurants
+# http://localhost:9870/details/618776b162a1816f885956bc
+> menu wrt to restaurants
+# http://localhost:9870/menu/9
 
 ///Orders
-> All Selected menu details
+> (Post) All Selected menu details
+# http://localhost:9870/menuItem
+# body > [1,2,3]
 > (Post) Place order
+# http://localhost:9870/placeOrder
+{
+    "name": "Nikita",
+    "email": "nikita@gmail.com",
+    "address": "Hno 23,Sector 1",
+    "phone": 768768686,
+    "cost": 387,
+    "menuItem": [
+      13,
+      15,
+      21
+    ],
+    "status": "Pending"
+}
 
 //// View Orders
 > View all the orders
-> Orders wrt to user id
+# http://localhost:9870/viewOrders
+> Orders wrt to email id
+# http://localhost:9870/viewOrders?email=aakash@gmail.com
 
 > (Put) Update Order Status
+# http://localhost:9870/updateOrder
+{
+	"_id":"626163e0fd90046630dab867",
+	"status":"In_Transit",
+	"tax_status":"Completed",
+	"bank_name":"SBI"
+	
+}
 > (Delete) Remove Order
+# http://localhost:9870/removeData
+{
+	"_id":"625af3a6bcfc70635f673d99"
+}

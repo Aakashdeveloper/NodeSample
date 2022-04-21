@@ -101,6 +101,89 @@ app.get(`/filters/:mealId`,(req,res) => {
 })
 
 /// restaurants details
+app.get('/details/:id',(req,res) =>{
+    let restId = mongo.ObjectId(req.params.id);
+    db.collection('restaurants').find({_id:restId}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+/// menu wrt to restaurants
+app.get('/menu/:id',(req,res) =>{
+    let Id = Number(req.params.id);
+    db.collection('menu').find({restaurant_id:Id}).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+/// place order
+app.post('/placeOrder',(req,res) => {
+    db.collection('orders').insert(req.body,(err,result) => {
+        if(err) throw err;
+        res.send('order Placed')
+    })
+})
+
+// menu on basis of ids
+app.post('/menuItem',(req,res) => {
+    if(Array.isArray(req.body)){
+        db.collection('menu').find({menu_id:{$in:req.body}}).toArray((err,result) => {
+            if(err) throw err;
+            res.send(result);
+        })
+    }else{
+        res.send('Please pass array only');
+    }
+})
+
+/// menu wrt to restaurants
+app.get('/viewOrders',(req,res) =>{
+    let email = req.query.email
+    let query = {}
+    if(email){
+        //query = {email:email}
+        query = {email}
+    }
+    db.collection('orders').find(query).toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
+//update order
+app.put('/updateOrder',(req,res) => {
+    db.collection('orders').updateOne(
+        {_id:mongo.ObjectId(req.body._id)},
+        {
+            $set:{
+                "status":req.body.status,
+                "tax_status":req.body.tax_status,
+                "bank_name":req.body.bank_name
+            }
+        },(err,result) => {
+            if(err) throw err;
+            res.status(200).send('Status updated')
+        }
+    )
+})
+
+// delete order
+app.delete('/removeData',(req,res) => {
+    let id = mongo.ObjectId(req.body._id);
+    let col = 'orders'
+    db.collection(col).find({_id:id}).toArray((err,result) => {
+        if(result.length !== 0){
+            db.collection(col).deleteOne({_id:id},(err,result) => {
+                if(err) throw err;
+                res.status(200).send('Order Deleted')
+            })
+        }else{
+            res.send(`No Order Found in ${col} collection to remove`)
+        }
+    })
+})
 
 
 ////list of mealtype
