@@ -1,0 +1,27 @@
+{
+    "openapi":"3.0.0.",
+    "info":{
+        "description":"This is Api For User Management",
+        "version":"__version__"
+    },
+    "tags":[
+        {
+            "name":"PUBLIC ROUTE",
+            "description":"PUBLIC APIS"
+        }
+    ],
+    "paths":{
+        "/health":{
+            "summary":"Testing Health of application",
+            "get":{
+                "description":"Testing Health of application",
+                "tags":["PUBLIC ROUTE"],
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    }
+                }
+            }
+        }
+    }
+}
