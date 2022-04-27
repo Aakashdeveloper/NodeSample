@@ -68,7 +68,7 @@ app.post('/addUser',(req,res) => {
 
 ///hard delete
 app.delete('/deleteUser', (req, res) => {
-    db.collection(col_name).remove(
+    db.collection(colName).remove(
         {_id:mongo.ObjectId(req.body._id)},(err,result) => {
             if(err) throw err;
             res.send('User Removed')

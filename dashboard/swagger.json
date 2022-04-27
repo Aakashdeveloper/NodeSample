@@ -22,6 +22,152 @@
                     }
                 }
             }
+        },
+        "/users":{
+            "summary":"Getting users",
+            "get":{
+                "description":"Getting users",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"query",
+                        "name":"role",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose Role as Admin or User"
+                    },
+                    {
+                        "in":"query",
+                        "name":"city",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose city"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Got Response"
+                    },
+                    "404":{
+                        "description":"Url Not Found"
+                    }
+                }
+            }
+        },
+        "/user/{id}":{
+            "summary":"Getting Particular user",
+            "get":{
+                "description":"Getting Particular user",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"path",
+                        "name":"id",
+                        "required":true,
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Provide user id"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Got Response"
+                    }
+                }
+            }
+        },
+        "/addUser":{
+            "summary":"Adding New User",
+            "post":{
+                "description":"Adding New User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name":"Jose",
+                                "city":"Helsinki",
+                                "phone":8786667,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+
+                },
+                "responses":{
+                    "200":{
+                        "description":"Got Response"
+                    }
+                }
+            }
+        },
+        "/updateUser":{
+            "summary":"Updating User",
+            "put":{
+                "description":"Updating User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"62694e42ae1fce067a1bf131",
+                                "name":"Jose",
+                                "city":"Helsinki",
+                                "phone":8786667,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+
+                },
+                "responses":{
+                    "200":{
+                        "description":"Got Response"
+                    }
+                }
+            }
+        },
+        "/deleteUser":{
+            "summary":"Deleting User",
+            "delete":{
+                "description":"Updating User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"62694e42ae1fce067a1bf131"
+                            }
+                        }
+                    }
+
+                },
+                "responses":{
+                    "200":{
+                        "description":"Got Response"
+                    }
+                }
+            }
         }
     }
 }
