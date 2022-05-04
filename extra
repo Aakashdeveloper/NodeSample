@@ -32,16 +32,17 @@ Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
 Testing
-////////////////////////
 DashBoard(Crud)
 Github
-Login/Logout(JWT)
-Oauth(with github)
 --Deployment of app---
 Heroku
+////////////////////////
 Pm2
 Docker
 Nginx
+
+Login/Logout(JWT)
+Oauth(with github)
 Oauth(with google)
 GraphQl API
 NodeJs with postgres
