@@ -36,21 +36,23 @@ DashBoard(Crud)
 Github
 --Deployment of app---
 Heroku
-////////////////////////
 Pm2
 Docker
 Nginx
-
 Login/Logout(JWT)
 Oauth(with github)
+////////////////////////
 Oauth(with google)
 GraphQl API
+
 NodeJs with postgres
+TelegramChat
+
 Paytm-Payment
+FIREBASE
+
 Email With Node(sendgird)(https://app.sendgrid.com/)
 Chatapp
-TelegramChat
-FIREBASE
 --------NOT---------
 React/Angular
 Html/css/jquery
@@ -229,3 +231,29 @@ Create > Post
 Read   > Get
 Update > Put
 Delete > Delete
+
+//////
+docker build . -t weatherapp
+docker run -p 8901:9800 weatherapp
+
+nginx
+
+path of nginx conf
+/usr/local/etc/nginx/nginx.conf
+
+Path of www
+/usr/local/var/www
+
+npm i -g pm2
+pm2 start filename
+pm2 status
+pm2 stop filename
+
+///https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+
+git remote -v https://username:token@sayalipatil02.github.io/Amazon-mode-in-JS/
+
+
+e288d498cac3770b567f
+c8db9859fbe2c32d975034a9c7f39e45d6b493ca
