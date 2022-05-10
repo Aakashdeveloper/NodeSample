@@ -41,10 +41,9 @@ Docker
 Nginx
 Login/Logout(JWT)
 Oauth(with github)
-////////////////////////
 Oauth(with google)
 GraphQl API
-
+////////////////////////
 NodeJs with postgres
 TelegramChat
 
@@ -255,5 +254,24 @@ pm2 stop filename
 git remote -v https://username:token@sayalipatil02.github.io/Amazon-mode-in-JS/
 
 
-e288d498cac3770b567f
-c8db9859fbe2c32d975034a9c7f39e45d6b493ca
+
+>>> 
+npx json-server --watch db.json --port 7890
+
+////Query
+{
+  Products(id:4){
+    product_name,
+    category,
+    Price
+  }
+}
+
+mutation{
+  addProducts(
+    id:53,
+    product_name:"Test product1",
+  ){
+    id
+  }
+}
