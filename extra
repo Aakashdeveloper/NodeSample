@@ -43,14 +43,12 @@ Login/Logout(JWT)
 Oauth(with github)
 Oauth(with google)
 GraphQl API
+TelegramChat
+Email With Node(nodemailer)
+Paytm-Payment
 ////////////////////////
 NodeJs with postgres
-TelegramChat
-
-Paytm-Payment
 FIREBASE
-
-Email With Node(sendgird)(https://app.sendgrid.com/)
 Chatapp
 --------NOT---------
 React/Angular
@@ -275,3 +273,5 @@ mutation{
     id
   }
 }
+
+https://dashboard.paytm.com/next/apikeys
