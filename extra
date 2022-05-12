@@ -46,8 +46,8 @@ GraphQl API
 TelegramChat
 Email With Node(nodemailer)
 Paytm-Payment
-////////////////////////
 NodeJs with postgres
+////////////////////////
 FIREBASE
 Chatapp
 --------NOT---------
@@ -275,3 +275,15 @@ mutation{
 }
 
 https://dashboard.paytm.com/next/apikeys
+
+brew services start postgresql
+brew services stop postgresql
+
+npm i -g firebase-tools
+
+firebase login
+firebase init
+> firebae functions
+> javascript
+> all default option
+firebase deploy
